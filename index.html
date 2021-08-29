@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initialscale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="overlay"id="overlay">
+      <h3>Searching Now..</h3>
+    </div>
+    <div class="hero-bg">
+      <section class="top">
+        <header>
+          <a href="#">Mindful.Eating</a>
+          <h1><span>The Healthy</span> Eating Experience</h1>
+          <p>Let food be thy medicine, thy medicine shall be thy food.</p>
+          <div class="form-container">
+            <form action="" >
+              <div class="form-left">
+                <label for="city">Enter your city</label>
+                <input type="text" name="city" id="city">
+                <p>Example:"Mumbai"</p>
+              </div>
+              <input type="button" value="Find Food Now"id="cta-btn">
+            </form>
+          </div>
+        </header>
+      </section>
+    </div>
+    <section class="authentic">
+      <div class="right-col">
+        <h2>Authentic. Awesome.</h2>
+        <p>The key to a healthy diet is to eat the right amount of calories for how active you are so you balance the energy you consume withe energy you use.
+          If you eat or drink more than your body needs, you'll put on weight because the energy you do not use is stored as fat.
+          <br>
+          <br>
+          You should also eat a wide range of foods to make sure you're getting a balanced diet and your body is receiving al the nutrients it needs.
+        </p>
+      </div>
+      <img src="images/food.jpg" alt="picture of food in a bowl">
+    </section>
+    <script >
+    let btn=document.getElementById('cta-btn');
+    let overlay=document.getElementById('overlay');
+    btn.addEventListner('click',()=>{
+      overlay.style.display='grid';
+      overlay.classList.add('animate-overlay');
+    })
+    </script>
+  </body>
+</html>
